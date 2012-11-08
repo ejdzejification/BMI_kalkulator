@@ -1,0 +1,121 @@
+body {
+background: black ;
+font-family: Sans-Serif;
+}
+
+#wrap {
+background: white url(measureTape.jpg) no-repeat;
+background-position: right top;
+width: 700px;
+margin: 20px auto;
+min-height: 500px;
+padding: 10px 20px 3px 20px;
+border-radius: 15px;
+}
+
+form[name="BMIkalkulator"] {
+padding-left: 10px;
+}
+
+form[name="BMIkalkulator"] p {
+padding-bottom: 10px;
+padding-top: 50px;
+}
+
+input[name="tezina"] {
+text-align: center;
+}
+
+input[name="visina"] {
+text-align: center;
+}
+
+input[type="text"] {
+width: 80px;
+height: 30px;
+}
+
+input [type="reset"] {
+
+}
+
+#content p {
+text-align: justify;
+}
+
+#left {
+float: left;
+padding-left: 10px;
+padding-right: 50px;
+}
+
+#left input[type="text"] {
+border: 1px solid #D80000;
+}
+
+#right {
+float: left;
+padding-left: 20px;
+padding-right: 30px;
+border-left: 1px dashed black;
+}
+
+#right input[type="text"] {
+border: none;
+}
+
+input.izracunajBMI {
+background: url(dugme.jpg) repeat-x;  
+width: 150px;
+height: 40px;
+text-align: left;
+font-size: 1.05em;
+color: white;
+border: NONE;
+border-radius: 5px;
+}
+
+input.izracunajBMI:hover {
+color: black;
+}
+
+input.obrisi {
+background: transparent;
+width: 150px;
+height: 20px;
+text-align: left;
+color: black;
+border: none;
+}
+
+input.obrisi:hover {
+font-weight: bold;
+}
+
+table {
+border-top: 1px dashed black;
+padding-top: 20px;
+padding-left: 20px;
+color: black;
+font-weight: bold;
+font-size: 0.8em;
+}
+
+table td {
+padding-right: 90px;
+}
+
+#rezultat input{
+padding-left: 100px;
+width: 250px;
+height: 60px;
+font-size: 50px;
+color: red;
+text-decoration: bold;
+}
+
+#footer {
+text-align: center;
+color: white;
+font-size: 10px;
+}

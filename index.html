@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>BMI Kalkulator</title>
+	<link rel="shortcut icon" href="measureTape.jpg" type="image/jpeg" />
+	<meta http-equiv="Content-Language" content="sr" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script language="JavaScript">
+		function izracunajBMI(form) {
+			tezina = (form.tezina.value)
+			visina = (form.visina.value)
+			BMI = Math.round((tezina / (visina * visina)) * 10) / 10
+			form.answer.value = BMI
+		};
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<div id="content">
+			<form name="BMIkalkulator">
+				<p><font size="6">BMI Kalkulator<br/></font>
+				<font color="#D80000">Unesite svoje podatke</font><br/>
+				<font size="2px">Indeks telesne mase (eng. Body Mass Index, BMI) je metoda računanja uhranjenosti. BMI treba shvatiti kao okvirnu metodu, budući da stvarno zdravstveno stanje osobe treba oceniti u širem medicinskom kontekstu.</font></p>
+				<div id="left">
+					<font color="black">Težina:</font><br/>
+					<input type="text" name="tezina" size="3"><font color="red"> kg</font><br/><br/>
+					<font color="black">Visina:</font><br/>
+					<input type="text" name="visina" size="3"><font color="red"> m</font><br/><br/><br/>
+					<input type="button" value="IZRAČUNAJ" class="izracunajBMI" onClick="izracunajBMI(this.form)"</input><br/>
+					<input type="reset" value="> resetuj" class="obrisi"></a><br/><br/>
+				</div>
+				<div id="right">
+					<font color="black">Vaš BMI:</font><br/>
+					<div id="rezultat">
+						<input type="text" name="answer" disabled="disabled"><br/><br/>
+					</div>
+					<table>
+						<tr>
+							<td id="1">< 18.5</td>
+							<td id="1">neuhranjenost</td>
+						</tr>
+						<tr>
+							<td id="2">18.5 - 24.9</td>
+							<td id="2">normalna težina</td>
+						</tr>
+						<tr>
+							<td id="3">25 - 29.9</td>
+							<td id="3">prekomerna težina</td>
+						</tr>
+						<tr>
+							<td>30 < </td>
+							<td>gojaznost</td>
+						</tr>
+					</table>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+		Designed by Anđela Jugović
+	</div>
+</body>
+</html>
